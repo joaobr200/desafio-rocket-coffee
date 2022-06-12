@@ -1,8 +1,9 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import { globalStyle } from "../styles/stitches.config";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  globalStyle();
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;

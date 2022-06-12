@@ -2,16 +2,26 @@
   "name": "desafio-rocket-coffee",
   "version": "0.1.0",
   "private": true,
+  "homepage": "desafio-rocket-coffee",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "yarn run build",
+    "deploy": "yarn gh-pages -d build"
   },
   "dependencies": {
+    "@radix-ui/react-navigation-menu": "^0.1.2",
+    "@stitches/react": "^1.2.8",
+    "@svgr/webpack": "^6.2.1",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "gh-pages": "^4.0.0",
     "next": "12.1.6",
+    "next-images": "^1.8.4",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "17.0.42",
